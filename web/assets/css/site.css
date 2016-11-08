@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #e24b3b;
+  color: #00bb3f;
 }
 
 a:hover {
@@ -18,9 +18,18 @@ a:hover {
 }
 
 .header {
-  background: #e24b3b;
+  background: #FFF;
   color: #FFF;
   padding: 6rem 0;
+}
+
+.header {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-image:url('../img/Seashore_of_Fortaleza.png');
+  background-position: center center;
+  background-size:cover;
 }
 
 .sidebar {
@@ -47,13 +56,15 @@ a:hover {
 }
 
 .section--primary {
-  background: #e24b3b;
+  background: #22222b;
   color: #FFF;
+  height: 300px;
+  padding-top: 50px;
 }
 
 .section--light {
-  background: #EEE;
-  color: #7e8690;
+  background: #79bd9a;
+  color: #FFF;
 }
 
 .headline {
@@ -69,10 +80,20 @@ a:hover {
 .headline--beta {
   font-weight: 300;
   text-transform: uppercase;
+  color: #00bb3f;
 }
 
 .headline--centered {
   text-align: center;
+}
+
+.presentation {
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+.section--primary .headline--beta {
+    color: #FFF;
 }
 
 /**
@@ -140,7 +161,7 @@ a:hover {
  */
 .btn-opencfp--primary {
   background: #FFF;
-  color: #e24b3b;
+  color: #000;
 }
 
 .btn-opencfp--primary:hover {
@@ -184,7 +205,7 @@ a:hover {
 }
 
 .module__header {
-  background: #e24b3b;
+  background: #00bb3f;
   color: #FFF;
   padding: 1rem 2rem;
 }
@@ -384,7 +405,7 @@ a:hover {
 }
 
 .navbar-opencfp {
-  background: #374146;
+  background: #22222b;
 }
 
 .navbar-collapse {
@@ -409,7 +430,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:focus
 {
   background: none;
-  border-color: #e24b3b;
+  border-color: #00bb3f;
 }
 
 .navbar-opencfp .navbar-toggle {

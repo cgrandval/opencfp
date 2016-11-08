@@ -6,21 +6,21 @@
                 </div>
                 <div class="col-md-9">
                     {% if cfp_open %}
-                        <h1 class="headline headline-alpha">Call For Papers Now Open!</h1>
-                        <h3 class="headline headline-alpha">Submissions accepted until {{ site.enddate }}</h3>
+                        <h1 class="headline headline-alpha">O Call For Papers está aberto!</h1>
+                        <h3 class="headline headline-alpha">As submissões estão aceitas até dia {{ site.enddate }}</h3>
                     {% else %}
                         <h1 class="headline headline-alpha">
                             {% if site.show_submission_count %}
-                                Call for Papers ended with {{ number_of_talks }} Submissions!
+                                O Call for Papers recebeu {{ number_of_talks }} submissões!
                             {% else %}
-                                Call for Papers has ended!
+                                O Call for Papers está fechado!
                             {% endif %}
                         </h1>
-                        <h3 class="headline headline-alpha">Submissions were accepted until {{ site.enddate }}</h3>
+                        <h3 class="headline headline-alpha">As submissões foram aceitas até dia {{ site.enddate }}</h3>
                     {% endif %}
                     <p>
-                        {% if cfp_open %}<a class="btn-opencfp btn-opencfp-medium btn-opencfp--outlined" href="{{ url('user_new') }}">Register Now</a>{% endif %}
-                        <a class="btn-opencfp btn-opencfp-medium btn-opencfp--primary" href="{{ url('dashboard') }}">View Submissions</a>
+                        {% if cfp_open %}<a class="btn-opencfp btn-opencfp-medium btn-opencfp--outlined" href="{{ url('user_new') }}">Submeta já</a>{% endif %}
+                        <a class="btn-opencfp btn-opencfp-medium btn-opencfp--primary" href="{{ url('dashboard') }}">Ver as submissões</a>
                     </p>
                 </div>
             </div>
@@ -32,12 +32,12 @@
         <div class="row">
             {% if site.event_location is defined and site.date_format is defined %}
             <div class="col-md-8"><h3 class="headline headline--alpha">
-                {{ site.title }} is  on {{ site.arrival|date(site.date_format) }} to {{ site.departure|date(site.date_format) }} in {{ site.event_location }}
+                O {{ site.title }} ocorrerá no dia {{ site.arrival|date(site.date_format) }} em {{ site.event_location }}
             </h3></div>
             {%  else %}
-                <div class="col-md-8"><h3 class="headline headline--alpha">For More Information About The Conference</h3></div>
+                <div class="col-md-8"><h3 class="headline headline--alpha">Mais informações sobre o evento</h3></div>
             {% endif %}
-            <div class="col-md-4 text-right"><a href="{{ site.eventurl }}" class="btn-opencfp btn-opencfp-medium btn-opencfp--light">Visit Conference Site</a></div>
+            <div class="col-md-4 text-right"><a href="{{ site.eventurl }}" class="btn-opencfp btn-opencfp-medium btn-opencfp--light">Visite o site</a></div>
         </div>
     </div>
 </section>
