@@ -3,6 +3,7 @@
     <head>
         <title>{% block title %}{{ site.title }}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
         <!-- Bootstrap -->
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="/assets/css/site.css" rel="stylesheet" media="screen">
@@ -11,7 +12,7 @@
     </head>
     <body{% if "/" == current_page %} class="home-page"{% endif %}>
         <div class="navbar navbar-opencfp navbar-fixed-top section--full" role="navigation">
-            <a href="{{ url('homepage') }}" class="logo pull-left"><img data-src="/assets/img/logo.svg" class="svg-inject" alt="Open CFP"></a>
+            <a href="{{ url('homepage') }}" class="logo pull-left"><img src="/assets/img/Darkmira_Tour_PHP_2017_white_56.png" alt="CFP - Darkmira Tour PHP 2017"></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>

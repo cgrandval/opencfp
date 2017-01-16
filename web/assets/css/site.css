@@ -2,7 +2,7 @@ body {
   background: #FFF;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
-  padding: 5.5rem 0;
+  padding: 5.5rem 0 0 0;
 }
 
 a {
@@ -18,9 +18,18 @@ a:hover {
 }
 
 .header {
-  background: #e24b3b;
+  background: #000000;
   color: #FFF;
   padding: 6rem 0;
+}
+
+.header {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-image:url('../img/background-header.jpg');
+  background-position: center center;
+  background-size:cover;
 }
 
 .sidebar {
@@ -47,13 +56,13 @@ a:hover {
 }
 
 .section--primary {
-  background: #e24b3b;
+  background: #22222b;
   color: #FFF;
 }
 
 .section--light {
-  background: #EEE;
-  color: #7e8690;
+  background: #24934a;
+  color: #ffffff;
 }
 
 .headline {
@@ -73,6 +82,11 @@ a:hover {
 
 .headline--centered {
   text-align: center;
+}
+
+.presentation {
+  min-height: 300px;
+  padding-top: 50px;
 }
 
 /**
@@ -139,18 +153,18 @@ a:hover {
  * @extends btn
  */
 .btn-opencfp--primary {
-  background: #FFF;
-  color: #e24b3b;
+  background: #24934a;
+  color: #fff;
 }
 
 .btn-opencfp--primary:hover {
-  background: #F7F7F7;
-  color: #e24b3b;
+  background: #fecc30;
+  color: #fff;
 }
 
 .btn-opencfp--light {
-  background: #7e8690;
-  color: #FFF;
+  background: #FFFFFF;
+  color: #000000;
 }
 
 .btn-opencfp--light:hover {
@@ -384,7 +398,7 @@ a:hover {
 }
 
 .navbar-opencfp {
-  background: #374146;
+  background: #22222b;
 }
 
 .navbar-collapse {
@@ -409,7 +423,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:focus
 {
   background: none;
-  border-color: #e24b3b;
+  border-color: #fecc30;
 }
 
 .navbar-opencfp .navbar-toggle {
